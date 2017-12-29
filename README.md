@@ -3,12 +3,12 @@ Use it like a template that starts production with Bootstrap.
 Creating a theme's CSS uses Customizer.
 For fine rewriting, use style.css.
 ## Included components
-Header menu
-Responsive content
- - Fixed
- - Fluid
-Modal window
-Slider
+- Header menu
+- Responsive content
+  - Fixed
+  - Fluid
+- Modal window
+- Slider
 ## Useful reference
 - [FontAwesome iconlist](http://fontawesome.io/icons/)
 - [Glyphicon](http://glyphicons.com/)
