@@ -18,3 +18,9 @@ lang specifies Japanese.
 - [Components list](https://getbootstrap.com/docs/3.3/components/)
 - [Customize and download](https://getbootstrap.com/docs/3.3/customize/)
 - [Bootstrap Live Customizer](https://www.bootstrap-live-customizer.com/)
+## Author & License
+lazurilose
+ - [WebSite](http://lazulirose.com/)
+ - [Twitter](https://twitter.com/lazulirose_en)
+ 
+[MIT LICENSE](https://lazulirose.github.io/mit-license/)
