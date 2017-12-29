@@ -1,6 +1,8 @@
 # Bootstrap base
 Use it like a template that starts production with Bootstrap.
 
+lang specifies Japanese.
+
 1. Creating a theme's CSS uses Customizer.
 1. For fine rewriting, use style.css.
 ## Included components
