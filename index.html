@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap</title>
+
+    <!--link-->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet prefetch">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+    <!-- This is the default setting. Can to custom using "Bootstrap Customize and Download" -->
+    <!--<link href="./css/bootstrap_customized.css" rel="stylesheet">-->
+    <link href="./css/style.css" rel="stylesheet">
+</head>
+
+<body>
+    <header class="header">
+        <nav class="navbar navbar-default navbar-fixed-top">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#sp_menu">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="#">Bootstrap</a>
+                </div>
+                <div class="collapse navbar-collapse" id="sp_menu">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li class="active"><a href="#">1</a></li>
+                        <li><a href="#">2</a></li>
+                        <li><a href="#">3</a></li>
+                        <li><a href="#">4</a></li>
+                        <li class="dropdown">
+                            <a data-toggle="dropdown">5 <span class="caret"></span></a>
+                            <ul class="dropdown-menu">
+                                <li class="dropdown-header">header</li>
+                                <li><a href="#">5-1</a></li>
+                                <li class="divider"></li>
+                                <li><a href="#">5-2</a></li>
+                                <li><a href="#">5-3</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <!--<button type="button" class="btn btn-default navbar-btn">button</button>-->
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <!-- To erase after use -->
+        <div class="container">
+            <!-- Useful reference -->
+            <a href="http://fontawesome.io/icons/" target="brank">FontAwesome iconlist</a>
+            <a href="http://glyphicons.com/" target="brank">Glyphicon</a>
+            <a href="https://getbootstrap.com/docs/3.3/components/" target="brank">Components list</a>
+            <a href="https://getbootstrap.com/docs/3.3/customize/" target="brank">Customize and download</a>
+            <a href="https://www.bootstrap-live-customizer.com/" target="brank">Bootstrap Live Customizer</a>
+
+        </div>
+        <!-- !To erase after use -->
+        <!-- grid -->
+        <!-- Fixed width -->
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8">Fixed width</div>
+                <div class="col-md-4 ">Fixed width</div>
+            </div>
+        </div>
+        <!-- Fluid width -->
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-sm-8">Fluid width</div>
+                <div class="col-sm-4">Fluid width</div>
+            </div>
+        </div>
+        <!-- !grid -->
+        <!-- modal -->
+        <!-- Add [data-backdrop = "static"] when closing the modal only when clicking the button -->
+        <button class="btn btn-info" data-toggle="modal" data-target="#modal1">modal</button>
+        <div class="modal fade" id="modal1">
+            <!-- Specify the size here -->
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button class="close" data-dismiss="modal">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+                        <h3 class=“modal-title”>modal</h3>
+                    </div>
+                    <div class="modal-body">
+                        <p>modal!!!</p>
+                    </div>
+                    <div class="modal-footer">
+                        <button class="btn btn-primary" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- !modal -->
+        <div class="container">
+            <!-- Automatic slide off removes [class = "slide"] -->
+            <div id="slide" class="carousel slide" data-ride="carousel" data-pause="false">
+                <ol class="carousel-indicators">
+                    <li data-target="#slide" data-slide-to="0" class="active"></li>
+                    <li data-target="#slide" data-slide-to="1"></li>
+                </ol>
+                <div class="carousel-inner">
+                    <div class="item active">
+                        <img src="./image/a.png">
+                        <div class="carousel-caption">
+                            <h2>Title</h2>
+                            <p>Comment</p>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <a href=""><img src="./image/a.png"></a>
+                    </div>
+                </div>
+                <a class="carousel-control left carousel-bg-none" href="#slide" data-slide="prev">
+                    <span class="glyphicon glyphicon-chevron-left"></span>
+                </a>
+                <a class="carousel-control right carousel-bg-none" href="#slide" data-slide="next">
+                    <span class="glyphicon glyphicon-chevron-right"></span>
+                </a>
+            </div>
+        </div>
+    </main>
+    <footer class="footer">
+
+    </footer>
+    <!--script-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    <script>
+        $('.carousel').carousel({
+            interval: 3000
+        })
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,25 @@
+/*****-------------------------------
+    Common initial setting
+-------------------------------*****/
+
+body {
+    overflow-x: hidden;
+}
+
+main {
+    display: block;
+    padding-top: 80px;
+    /* header height */
+}
+
+.nav .dropdown {
+    cursor: pointer;
+}
+
+.carousel-control.left.carousel-bg-none {
+    background: none;
+}
+
+.carousel-control.right.carousel-bg-none {
+    background: none;
+}
